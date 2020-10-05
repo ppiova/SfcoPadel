@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="SfcoPadel.UI.Main.Views.MainTabbedPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:mapviews="clr-namespace:SfcoPadel.UI.Map.Views"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    NavigationPage.HasNavigationBar="False"
+    Style="{DynamicResource TabStyle}">
+    <TabbedPage.Children>
+        <mapviews:CourtsMapPage Title="Mapa" Visual="Material">
+            <mapviews:CourtsMapPage.IconImageSource>
+                <FontImageSource FontFamily="Font-Awesome-Solid" Glyph="&#xf5a0;" />
+            </mapviews:CourtsMapPage.IconImageSource>
+        </mapviews:CourtsMapPage>
+        <ContentPage Title="Información" Visual="Material">
+            <ContentPage.IconImageSource>
+                <FontImageSource FontFamily="Font-Awesome-Solid" Glyph="&#xf05a;" />
+            </ContentPage.IconImageSource>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>

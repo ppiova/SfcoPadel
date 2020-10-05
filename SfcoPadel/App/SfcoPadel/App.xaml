@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<prism:PrismApplication
+    x:Class="SfcoPadel.App"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms">
+    <Application.Resources>
+        <!--  Application resource dictionary  -->
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="#FDC830" />
+            <Setter Property="BarTextColor" Value="#FFFFFF" />
+        </Style>
+        <Style x:Key="TabStyle" TargetType="TabbedPage">
+            <Setter Property="BarBackgroundColor" Value="#FFFFFF" />
+            <Setter Property="SelectedTabColor" Value="#F59302" />
+            <Setter Property="UnselectedTabColor" Value="#95989A" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Roboto-Light" />
+        </Style>
+        <Style x:Key="Title" TargetType="Label">
+            <Setter Property="FontSize" Value="28" />
+            <Setter Property="TextColor" Value="#FFFFFF" />
+        </Style>
+        <Style x:Key="Address" TargetType="Label">
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="TextColor" Value="#606060" />
+        </Style>
+        <Style x:Key="HeaderIndication" TargetType="Label">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontFamily" Value="Roboto-Bold" />
+            <Setter Property="TextColor" Value="#FFFFFF" />
+        </Style>
+        <Style x:Key="CreditCardAllowedIcon" TargetType="Label">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontFamily" Value="Font-Awesome-Solid" />
+            <Setter Property="TextColor" Value="#FFFFFF" />
+        </Style>
+
+        <Style x:Key="SeeRoute" TargetType="Button">
+            <Setter Property="HeightRequest" Value="48" />
+            <Setter Property="BackgroundColor" Value="#FFFFFF" />
+            <Setter Property="TextColor" Value="#F59302" />
+        </Style>
+
+    </Application.Resources>
+</prism:PrismApplication>
